@@ -19,7 +19,7 @@ class User {
     required this.posts});
 }
 
-final List<String> searchKeyWordsEnum = ['IGTV', 'Shop', 'Style', 'Sports', 'Auto'];
+final List<String> searchKeyWordsEnum = ['IGTV', 'Shop', 'Style', 'Sports', 'Auto', 'IGTV', 'Shop', 'Style', 'Sports', 'Auto'];
 
 final List<User> users = [
   User(

@@ -60,36 +60,36 @@ class SwitchAccountPage extends StatelessWidget {
                 ),
                 Container(
                   child: Align(
-                      alignment: Alignment.bottomCenter,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Container(
-                            decoration: BoxDecoration(
-                              border: Border(
-                                bottom: BorderSide(color: DarkTheme.textDisable),
-                              ),
+                    alignment: Alignment.bottomCenter,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            border: Border(
+                              bottom: BorderSide(color: DarkTheme.textDisable),
                             ),
                           ),
-                          Container(
-                            margin: const EdgeInsets.only(top: 18, bottom: 18),
-                            child: RichText(
-                              text: TextSpan(
-                                text: 'Don’t have an account?  ',
-                                style: TxtStyle.headingCardFontWeightBold.copyWith(color: DarkTheme.textDisable),
-                                children: [
-                                  TextSpan(
-                                    text: 'Sign up',
-                                    style: TxtStyle.headingCardFontWeightBold.copyWith(color: DarkTheme.text),
-                                  )
-                                ]
-                              )
-                            ),
+                        ),
+                        Container(
+                          margin: const EdgeInsets.only(top: 18, bottom: 18),
+                          child: RichText(
+                            text: TextSpan(
+                              text: 'Don’t have an account?  ',
+                              style: TxtStyle.headingCardFontWeightBold.copyWith(color: DarkTheme.textDisable),
+                              children: [
+                                TextSpan(
+                                  text: 'Sign up',
+                                  style: TxtStyle.headingCardFontWeightBold.copyWith(color: DarkTheme.text),
+                                )
+                              ]
+                            )
                           ),
-                        ],
-                      )//last one
+                        ),
+                      ],
+                    )//last one
                   ),
-                )
+                ),
               ],
             )
         )
