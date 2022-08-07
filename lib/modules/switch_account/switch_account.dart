@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/config/constants/assets_path.dart';
+import 'package:instagram_ui/modules/home/home_pag.dart';
 import 'package:instagram_ui/themes/app_color.dart';
 import 'package:instagram_ui/themes/text_style.dart';
 import 'package:instagram_ui/widgets/app_button.dart';
 
 class SwitchAccountPage extends StatelessWidget {
+  static const String routeName = '/SwitchAccountPage';
   const SwitchAccountPage({Key? key}) : super(key: key);
 
   @override
@@ -45,7 +47,7 @@ class SwitchAccountPage extends StatelessWidget {
                             child: AppButton(
                               label: 'Log in',
                               onTap: () {
-                                print('Log in');
+                                Navigator.pushNamed(context, HomePage.routeName);
                               },
                               color: DarkTheme.blueMain,
                             ),

@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/config/constants/assets_path.dart';
+import 'package:instagram_ui/modules/home/home_pag.dart';
+import 'package:instagram_ui/modules/switch_account/switch_account.dart';
 import 'package:instagram_ui/themes/app_color.dart';
 import 'package:instagram_ui/themes/text_style.dart';
 import 'package:instagram_ui/widgets/app_button.dart';
 
 class LoginPage extends StatelessWidget {
+  static const String routeName = '/LoginPage';
   const LoginPage({Key? key}) : super(key: key);
 
   @override
@@ -34,7 +37,7 @@ class LoginPage extends StatelessWidget {
                         child: TextField(
                           onTap: () {},
                           decoration: InputDecoration(
-                              labelText: 'Enter something',
+                              labelText: 'User name',
                               enabledBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(
                                     width: 3, color: DarkTheme.textDisable),
@@ -81,9 +84,9 @@ class LoginPage extends StatelessWidget {
                         child: AppButton(
                           label: 'Log in',
                           onTap: () {
-                            print('Log in');
+                            Navigator.pushNamed(context, HomePage.routeName);
                           },
-                          color: DarkTheme.blueMainDisable,
+                          color: DarkTheme.blueMain,
                         ),
                       ),
                       Container(
@@ -100,10 +103,15 @@ class LoginPage extends StatelessWidget {
                                   fit: BoxFit.fill,
                                 ),
                               ),
-                              Text(
-                                'Switch accounts',
-                                style: TxtStyle.headingCardFontWeightBold
-                                    .copyWith(color: DarkTheme.blueMain),
+                              InkWell(
+                                onTap: () {
+                                  Navigator.pushNamed(context, SwitchAccountPage.routeName);
+                                },
+                                child: Text(
+                                  'Switch accounts',
+                                  style: TxtStyle.headingCardFontWeightBold
+                                      .copyWith(color: DarkTheme.blueMain),
+                                ),
                               )
                             ],
                           )),
@@ -118,7 +126,7 @@ class LoginPage extends StatelessWidget {
                                 decoration: BoxDecoration(
                                   border: Border(
                                     bottom:
-                                        BorderSide(color: DarkTheme.textDisable),
+                                      BorderSide(color: DarkTheme.textDisable),
                                   ),
                                 ),
                               ),

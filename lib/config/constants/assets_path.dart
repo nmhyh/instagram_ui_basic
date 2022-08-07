@@ -25,5 +25,7 @@ class AssetPath {
   static const String iconFacebook = '$prePath/facebook.png';
   static const String iconAvatar = '$prePath/avatar.png';
   static const String iconShape = '$prePath/shape.png';
+  static const String iconHomePage = '$prePath/home_page.png';
+  static const String iconSearchActivePage = '$prePath/search_active_page.png';
   static const String imagePost1 = '$prePath/post_1.png';
 }
