@@ -82,7 +82,7 @@ class TxtStyle {
   );
 
   static const headingCardContentFontWeightBold = TextStyle(
-      fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w600,
       fontSize: 13,
       height: 1.2,
       decoration: TextDecoration.none,
@@ -99,7 +99,7 @@ class TxtStyle {
 
   static const textTitleStory = TextStyle(
       fontWeight: FontWeight.w400,
-      fontSize: 12,
+      fontSize: 13,
       height: 1.2,
       decoration: TextDecoration.none,
       color: DarkTheme.text

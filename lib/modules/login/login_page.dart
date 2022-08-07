@@ -108,8 +108,7 @@ class LoginPage extends StatelessWidget {
                             ],
                           )),
                       Container(
-                        margin: const EdgeInsets.symmetric(
-                            vertical: 42, horizontal: 34),
+                        margin: const EdgeInsets.symmetric(vertical: 42, horizontal: 34),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [

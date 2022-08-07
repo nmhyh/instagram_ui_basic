@@ -24,4 +24,6 @@ class AssetPath {
   static const String iconVideo = '$prePath/video.png';
   static const String iconFacebook = '$prePath/facebook.png';
   static const String iconAvatar = '$prePath/avatar.png';
+  static const String iconShape = '$prePath/shape.png';
+  static const String imagePost1 = '$prePath/post_1.png';
 }
