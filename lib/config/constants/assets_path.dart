@@ -12,6 +12,7 @@ class AssetPath {
   static const String iconIGTV = '$prePath/igtv.png';
   static const String iconInstagramLogo = '$prePath/instagram_logo.png';
   static const String iconLike = '$prePath/like.png';
+  static const String iconLikeActive = '$prePath/like_active.png';
   static const String iconLive = '$prePath/live.png';
   static const String iconMessenger = '$prePath/messenger.png';
   static const String iconMoreIcon = '$prePath/more_icon.png';

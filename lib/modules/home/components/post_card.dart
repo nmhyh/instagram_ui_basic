@@ -65,34 +65,34 @@ class PostCard extends StatelessWidget {
           Container(
             width: double.infinity,
             child: Stack(
-                children: [
-                  Container(
-                    width: double.infinity,
-                    child: Image.asset(
-                        AssetPath.imagePost1,
-                        fit:BoxFit.fill
-                    ),
+              children: [
+                Container(
+                  width: double.infinity,
+                  child: Image.asset(
+                      AssetPath.imagePost1,
+                      fit:BoxFit.fill
                   ),
-                  Positioned(
-                      top: 14,
-                      right: 14,
-                      child: Container(
-                        padding: EdgeInsets.symmetric(vertical: 6, horizontal: 8),
-                        decoration: BoxDecoration(
-                          color: Colors.black45,
-                          borderRadius: BorderRadius.circular(18),
-                        ),
-                        child: Row(
-                          children: [
-                            Text(
-                              '1/3',
-                              style: TxtStyle.headingCardFontWeightBold.copyWith(color: DarkTheme.white),
-                            )
-                          ],
-                        ),
-                      )
-                  ),
-                ]
+                ),
+                Positioned(
+                    top: 14,
+                    right: 14,
+                    child: Container(
+                      padding: EdgeInsets.symmetric(vertical: 6, horizontal: 8),
+                      decoration: BoxDecoration(
+                        color: Colors.black45,
+                        borderRadius: BorderRadius.circular(18),
+                      ),
+                      child: Row(
+                        children: [
+                          Text(
+                            '1/3',
+                            style: TxtStyle.headingCardFontWeightBold.copyWith(color: DarkTheme.white),
+                          )
+                        ],
+                      ),
+                    )
+                ),
+              ]
             ),
           ),
           Container(

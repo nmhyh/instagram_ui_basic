@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                 PostCard(),
                 Container(
                   margin: EdgeInsets.only(bottom: 50),
-                )
+                ),
               ],
             )
           ),

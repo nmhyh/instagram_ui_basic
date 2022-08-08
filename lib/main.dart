@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:instagram_ui/modules/home/home_pag.dart';
 import 'package:instagram_ui/modules/login/login_page.dart';
+import 'package:instagram_ui/modules/notification_page/notification_page.dart';
 import 'package:instagram_ui/modules/search/search_page.dart';
 import 'package:instagram_ui/modules/switch_account/switch_account.dart';
 import 'package:instagram_ui/themes/app_color.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         SearchPage.routeName: (context) => SearchPage(),
         LoginPage.routeName: (context) => LoginPage(),
         SwitchAccountPage.routeName: (context) => SwitchAccountPage(),
+        NotificationPage.routeName: (context) => NotificationPage(),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
