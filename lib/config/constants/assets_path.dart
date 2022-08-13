@@ -28,5 +28,16 @@ class AssetPath {
   static const String iconShape = '$prePath/shape.png';
   static const String iconHomePage = '$prePath/home_page.png';
   static const String iconSearchActivePage = '$prePath/search_active_page.png';
+  static const String iconMenu = '$prePath/menu.png';
+  static const String iconArrowDown = '$prePath/arrow_down.png';
+  static const String iconAddStory = '$prePath/add_story.png';
+  static const String iconGridView = '$prePath/grid_icon.png';
+  static const String iconTags = '$prePath/tags_icon.png';
+  static const String iconArchive = '$prePath/archive.png';
+  static const String iconYourActivity = '$prePath/your_activity.png';
+  static const String iconNameTags = '$prePath/name_tags.png';
+  static const String iconCloseFriends = '$prePath/close_friends.png';
+  static const String iconDiscoverPeople = '$prePath/discover_people.png';
+  static const String iconOpenFacebook = '$prePath/open_facebook.png';
   static const String imagePost1 = '$prePath/post_1.png';
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_ui/config/constants/assets_path.dart';
 import 'package:instagram_ui/modules/home/home_pag.dart';
 import 'package:instagram_ui/modules/notification_page/notification_page.dart';
+import 'package:instagram_ui/modules/personal_page/personal_page.dart';
 import 'package:instagram_ui/modules/search/search_page.dart';
 import 'package:instagram_ui/themes/app_color.dart';
 
@@ -55,11 +56,45 @@ class BottomBar extends StatelessWidget {
                       child: Image.asset(ModalRoute.of(context)?.settings?.name == NotificationPage.routeName ? AssetPath.iconLikeActive : AssetPath.iconLike),
                     ),
                   ),
-                  Container(
-                    height: 26,
-                    width: 26,
-                    child: CircleAvatar(
-                      backgroundImage: AssetImage(AssetPath.iconAvatar),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, PersonalPage.routeName);
+                    },
+                    child: Container(
+                      height: 26,
+                      width: 26,
+                      child: ModalRoute.of(context)?.settings?.name == PersonalPage.routeName
+                        ? Container(
+                          height: 26,
+                          width: 26,
+                          padding: EdgeInsets.all(0.5),
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [
+                                Color(0xFF333333),
+                                Color(0xFF333333),
+                              ],
+                            ),
+                            borderRadius: BorderRadius.all(Radius.circular(13)),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(0.5),
+                            child: Container(
+                              height: 26,
+                              width: 26,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(13)),
+                                image: DecorationImage(
+                                  image: AssetImage(AssetPath.iconAvatar),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ),
+                        )
+                        : CircleAvatar(
+                          backgroundImage: AssetImage(AssetPath.iconAvatar),
+                        )
                     ),
                   ),
                 ],
