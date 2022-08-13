@@ -42,177 +42,220 @@ class _PersonalPageState extends State<PersonalPage> with SingleTickerProviderSt
       ),
       endDrawer: Drawer(
         child:  Container(
-          margin: EdgeInsets.only(top: 25, left: 20),
-          child: ListView(
-            padding:  EdgeInsets.all(0.0),
-            children: <Widget>[
+          margin: EdgeInsets.only(top: 25, left: 16),
+          child: Stack(
+            children: [
               Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                child: Row(
-                  children: [
+                child: ListView(
+                  padding:  EdgeInsets.all(0.0),
+                  children: <Widget>[
                     Container(
-                      child: Text(
-                        's.khasanov_',
-                        style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            child: Text(
+                              's.khasanov_',
+                              style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 13),
+                            child: Image.asset(
+                              AssetPath.iconArchive,
+                              width: 24,
+                              height: 24,
+                              fit:BoxFit.fill,
+                            ),
+                          ),
+                          Container(
+                            child: Text(
+                              'Archive',
+                              style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 13),
+                            child: Image.asset(
+                              AssetPath.iconYourActivity,
+                              width: 24,
+                              height: 24,
+                              fit:BoxFit.fill,
+                            ),
+                          ),
+                          Container(
+                            child: Text(
+                              'Your Activity',
+                              style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 13),
+                            child: Image.asset(
+                              AssetPath.iconNameTags,
+                              width: 24,
+                              height: 24,
+                              fit:BoxFit.fill,
+                            ),
+                          ),
+                          Container(
+                            child: Text(
+                              'Nametag',
+                              style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 13),
+                            child: Image.asset(
+                              AssetPath.iconShape,
+                              width: 24,
+                              height: 24,
+                              fit:BoxFit.fill,
+                            ),
+                          ),
+                          Container(
+                            child: Text(
+                              'Saved',
+                              style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 13),
+                            child: Image.asset(
+                              AssetPath.iconCloseFriends,
+                              width: 24,
+                              height: 24,
+                              fit:BoxFit.fill,
+                            ),
+                          ),
+                          Container(
+                            child: Text(
+                              'Close Friends',
+                              style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 13),
+                            child: Image.asset(
+                              AssetPath.iconDiscoverPeople,
+                              width: 24,
+                              height: 18,
+                              fit:BoxFit.fill,
+                            ),
+                          ),
+                          Container(
+                            child: Text(
+                              'Discover People',
+                              style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(right: 13),
+                            child: Image.asset(
+                              AssetPath.iconOpenFacebook,
+                              width: 24,
+                              height: 24,
+                              fit:BoxFit.fill,
+                            ),
+                          ),
+                          Container(
+                            child: Text(
+                              'Open Facebook',
+                              style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
               ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 13),
-                      child: Image.asset(
-                        AssetPath.iconArchive,
-                        width: 24,
-                        height: 24,
-                        fit:BoxFit.fill,
-                      ),
+              Align(
+                alignment: FractionalOffset.bottomCenter,
+                child: Container(
+                  height: 50,
+                  width: double.infinity,
+                  child: Container(
+                    color: DarkTheme.white,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Container(
+                          padding: EdgeInsets.symmetric(horizontal: 12),
+                          child: Row(
+                            children: [
+                              Container(
+                                margin: EdgeInsets.only(right: 13),
+                                child: Image.asset(
+                                  AssetPath.iconSetting,
+                                  width: 24,
+                                  height: 24,
+                                  fit:BoxFit.fill,
+                                ),
+                              ),
+                              Container(
+                                child: Text(
+                                  'Settings',
+                                  style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     ),
-                    Container(
-                      child: Text(
-                        'Archive',
-                        style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 13),
-                      child: Image.asset(
-                        AssetPath.iconYourActivity,
-                        width: 24,
-                        height: 24,
-                        fit:BoxFit.fill,
-                      ),
-                    ),
-                    Container(
-                      child: Text(
-                        'Your Activity',
-                        style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 13),
-                      child: Image.asset(
-                        AssetPath.iconNameTags,
-                        width: 24,
-                        height: 24,
-                        fit:BoxFit.fill,
-                      ),
-                    ),
-                    Container(
-                      child: Text(
-                        'Nametag',
-                        style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 13),
-                      child: Image.asset(
-                        AssetPath.iconShape,
-                        width: 24,
-                        height: 24,
-                        fit:BoxFit.fill,
-                      ),
-                    ),
-                    Container(
-                      child: Text(
-                        'Saved',
-                        style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 13),
-                      child: Image.asset(
-                        AssetPath.iconCloseFriends,
-                        width: 24,
-                        height: 24,
-                        fit:BoxFit.fill,
-                      ),
-                    ),
-                    Container(
-                      child: Text(
-                        'Close Friends',
-                        style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 13),
-                      child: Image.asset(
-                        AssetPath.iconDiscoverPeople,
-                        width: 24,
-                        height: 24,
-                        fit:BoxFit.fill,
-                      ),
-                    ),
-                    Container(
-                      child: Text(
-                        'Discover People',
-                        style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-                child: Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(right: 13),
-                      child: Image.asset(
-                        AssetPath.iconOpenFacebook,
-                        width: 24,
-                        height: 24,
-                        fit:BoxFit.fill,
-                      ),
-                    ),
-                    Container(
-                      child: Text(
-                        'Open Facebook',
-                        style: TxtStyle.heading3Medium.copyWith(color: DarkTheme.text),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+              )
             ],
           ),
         ),

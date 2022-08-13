@@ -39,5 +39,6 @@ class AssetPath {
   static const String iconCloseFriends = '$prePath/close_friends.png';
   static const String iconDiscoverPeople = '$prePath/discover_people.png';
   static const String iconOpenFacebook = '$prePath/open_facebook.png';
+  static const String iconSetting = '$prePath/setting.png';
   static const String imagePost1 = '$prePath/post_1.png';
 }
