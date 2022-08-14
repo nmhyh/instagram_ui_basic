@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_ui/config/constants/assets_path.dart';
 import 'package:instagram_ui/models/user.dart';
 import 'package:instagram_ui/modules/common/bottom_bar.dart';
+import 'package:instagram_ui/modules/profile_page/profile_page.dart';
 import 'package:instagram_ui/themes/app_color.dart';
 import 'package:instagram_ui/themes/text_style.dart';
 
@@ -30,15 +31,16 @@ class _PersonalPageState extends State<PersonalPage> with SingleTickerProviderSt
         backgroundColor: DarkTheme.backgroundPersonalPage,
         title: AppBarPersonalPage(),
         automaticallyImplyLeading: false,
-          actions: [
-            Builder(
-              builder: (context) => IconButton(
-                icon: Image.asset(AssetPath.iconMenu),
-                onPressed: () => Scaffold.of(context).openEndDrawer(),
-                tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-              ),
+        actions: [
+          Builder(
+            builder: (context) => IconButton(
+              icon: Image.asset(AssetPath.iconMenu),
+              onPressed: () => Scaffold.of(context).openEndDrawer(),
+              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
             ),
-          ]
+          ),
+        ],
+        centerTitle: true,
       ),
       endDrawer: Drawer(
         child:  Container(
@@ -421,12 +423,17 @@ class _PersonalPageState extends State<PersonalPage> with SingleTickerProviderSt
                   margin: const EdgeInsets.only(left: 14, right: 14, bottom: 15),
                   padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
                   alignment: Alignment.center,
-                  child: Padding(
-                    padding: const EdgeInsets.all(1),
-                    child: Text(
-                      'Edit Profile',
-                      style: TxtStyle.headingCardFontWeightBold,
-                    )
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, ProfilePage.routeName);
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(1),
+                      child: Text(
+                        'Edit Profile',
+                        style: TxtStyle.headingCardFontWeightBold,
+                      )
+                    ),
                   ),
                   decoration: BoxDecoration(
                     border: Border.all(

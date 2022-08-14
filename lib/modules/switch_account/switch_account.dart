@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/config/constants/assets_path.dart';
-import 'package:instagram_ui/modules/home/home_pag.dart';
+import 'package:instagram_ui/modules/home/home_page.dart';
 import 'package:instagram_ui/themes/app_color.dart';
 import 'package:instagram_ui/themes/text_style.dart';
 import 'package:instagram_ui/widgets/app_button.dart';
